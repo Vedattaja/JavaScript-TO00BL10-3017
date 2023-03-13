@@ -1,0 +1,23 @@
+input[type=text] {
+  border: 1px solid black;
+}
+
+body {
+	background-color: #E8E9EB;
+}
+
+p {
+	font-size: 25px;
+	margin-right: 10px;
+
+}
+
+#addTask-error {
+	color : red;
+}
+
+.strike {
+  text-decoration: line-through;
+  color : gray;
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>To do list</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  
+
+
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-24 text-center mt-5">
+        <h1>Todo-list for your daily tasks</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-24 text-left">
+        <h2 id="info-header">You have 0 tasks in our system</h2>
+        <h2 id="completed-task">Completed tasks: 0</h2>
+        <h2 id="tasks-left">Task waiting to be completed: 0</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-left">
+      <div class="col-md-12">
+        <form id=addTaskForm>
+          <div class="form-group">
+            <label for="addTask">Add Task:</label>
+            <input type="text" class="form-control" id="addTask-input" name="addTask">
+            <span id="addTask-error" class="error-message"></span>
+          <div class="row justify-content-center py-2">
+            <div class="col-md-3">
+              <button type="button" class="btn btn-primary btn-block" onclick="addToTasks()">Add new task</button>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-secondary btn-block" onclick="removeFinished()">Hide completed</button>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-secondary btn-block" onclick="removeUnfinished()">Hide unfinished</button>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-secondary btn-block" onclick="showAll()">Show all</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+    <div class="row justify-content-left">
+      <div class="col-md-12">
+        <div id="tasks"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
